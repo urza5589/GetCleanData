@@ -3,153 +3,115 @@ Coursera Getting and Cleaning Data Project Codebook
 Version 1.0
 =================================================================
 
-Transformations on data from experiment found at the link below have been perfomred. This codebook lists variables and summareis included in the final data set (labeldData). 
+Transformations on data from experiment found at the link below have been performed. This codebook lists variables and measurments included in the final data set (labeldData). 
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
 
-The dataset includes the following columns:
+file names
+=========================================
+
+- 'features.txt': List of all features.
+
+- 'activity_labels.txt': Links the class labels with their activity name.
+
+- 'train/X_train.txt': Training set.
+
+- 'train/y_train.txt': Training labels.
+
+- 'test/X_test.txt': Test set.
+
+- 'test/y_test.txt': Test labels.
+
+- 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
+
+
+The final dataset includes the following Variables:
 =========================================
 
 - 'activitynumber'
-	uniqiue numeric activity identifier from 1-6
+	unique numeric activity identifier from 1-6
 
 - 'activitylabels'
 	text field describing each activity:
 	Walking, Walking_Upstairs, Walking_Downstairs, Sitting, 	Standing, Laying
 
 - 'subject'
-	uniqiue numeric identifier for each inddivudal subject
+	unique numeric identifier for each individual subject
 	from 1-30
 
--'tBodyAccmeanXz'
 
--'tBodyAccJerkmeanXz'
-
--'tBodyGyroJerkmeanXz'
-
--'tBodyGyroMagmeanz'
-
--'fBodyAccJerkmeanYz'
-
--'fBodyBodyAccJerkMagmeanz'
-
--'tGravityAccstdXz'
-
--'tBodyGyrostdXz'
-
--'tBodyAccMagstdz'
-
--'fBodyAccstdYz'
-
--'fBodyGyrostdYz'
-
--'tBodyAccmeanYz'
-
--'tBodyAccJerkmeanYz'
-
--'tBodyGyroJerkmeanYz'
-
--'tBodyGyroJerkMagmeanz'
-
--'fBodyAccJerkmeanZz'
-
--'fBodyBodyGyroMagmeanz'
-
--'tGravityAccstdYz'
-
--'tBodyGyrostdYz'
-
--'tGravityAccMagstdz'
-
--'fBodyAccstdZz'
-
--'fBodyGyrostdZz'
-
--'tBodyAccmeanZz'
-
--'tBodyAccJerkmeanZz'
-
--'tBodyGyroJerkmeanZz'
-
--'fBodyAccmeanXz'
-
--'fBodyGyromeanXz'
-
--'fBodyBodyGyroJerkMagmeanz'
-
--'tGravityAccstdZz'
-
--'tBodyGyrostdZz'
-
--'tBodyAccJerkMagstdz'
-
--'fBodyAccJerkstdXz'
-
--'fBodyAccMagstdz'
-
--'tGravityAccmeanXz'
-
--'tBodyGyromeanXz'
-
--'tBodyAccMagmeanz'
-
--'fBodyAccmeanYz'
-
--'fBodyGyromeanYz'
-
--'tBodyAccstdXz'
-
--'tBodyAccJerkstdXz'
-
--'tBodyGyroJerkstdXz'
-
--'tBodyGyroMagstdz'
-
--'fBodyAccJerkstdYz'
-
--'fBodyBodyAccJerkMagstdz'
-
--'tGravityAccmeanYz'
-
--'tBodyGyromeanYz'
-
--'tGravityAccMagmeanz'
-
--'fBodyAccmeanZz'
-
--'fBodyGyromeanZz'
-
--'tBodyAccstdYz'
-
--'tBodyAccJerkstdYz'
-
--'tBodyGyroJerkstdYz'
-
--'tBodyGyroJerkMagstdz'
-
--'fBodyAccJerkstdZz'
-
--'fBodyBodyGyroMagstdz'
-
--'tGravityAccmeanZz'
-
--'tBodyGyromeanZz'
-
--'tBodyAccJerkMagmeanz'
-
--'fBodyAccJerkmeanXz'
-
--'fBodyAccMagmeanz'
-
--'tBodyAccstdZz'
-
--'tBodyAccJerkstdZz'
-
--'tBodyGyroJerkstdZz'
-
--'fBodyAccstdXz'
-
+The dataset includes the following measurments:
+=========================================
+Each measurement is labeled t/f indicating if it is a Euclid Norm (t) or frequency domain signal (f)
+Each measurement is labeled with the type of measurement be it body/jerk/gravity
+Each measurement is labeled weather it is mean or standard deviation (std)
+Each measurement is labeled with the axis X/Y/Z
+
+
+-'tBodyAccmeanX'- 
+-'tBodyAccJerkmeanX'
+-'tBodyGyroJerkmeanX'  
+-'tBodyGyroMagmean'  
+-'fBodyAccJerkmeanY'
+-'fBodyBodyAccJerkMagmean'
+-'tGravityAccstdX'
+-'tBodyGyrostdX'
+-'tBodyAccMagstd'
+-'fBodyAccstdY'
+-'fBodyGyrostdY'
+-'tBodyAccmeanY'
+-'tBodyAccJerkmeanY'
+-'tBodyGyroJerkmeanY'
+-'tBodyGyroJerkMagmean'
+-'fBodyAccJerkmeanZ'
+-'fBodyBodyGyroMagmean'
+-'tGravityAccstdY'
+-'tBodyGyrostdY'
+-'tGravityAccMagstd'
+-'fBodyAccstdZ'
+-'fBodyGyrostdZ'
+-'tBodyAccmeanZ'
+-'tBodyAccJerkmeanZ'
+-'tBodyGyroJerkmeanZ'
+-'fBodyAccmeanX'
+-'fBodyGyromeanX'
+-'fBodyBodyGyroJerkMagmean'
+-'tGravityAccstdZ'
+-'tBodyGyrostdZ'
+-'tBodyAccJerkMagstd'
+-'fBodyAccJerkstdX'
+-'fBodyAccMagstd'
+-'tGravityAccmeanX'
+-'tBodyGyromeanX'
+-'tBodyAccMagmean'
+-'fBodyAccmeanY'
+-'fBodyGyromeanY'
+-'tBodyAccstdX'
+-'tBodyAccJerkstdX'
+-'tBodyGyroJerkstdX'
+-'tBodyGyroMagstd'
+-'fBodyAccJerkstdY'
+-'fBodyBodyAccJerkMagstd'
+-'tGravityAccmeanY'
+-'tBodyGyromeanY'
+-'tGravityAccMagmean'
+-'fBodyAccmeanZ'
+-'fBodyGyromeanZ'
+-'tBodyAccstdY'
+-'tBodyAccJerkstdY'
+-'tBodyGyroJerkstdY'
+-'tBodyGyroJerkMagstd'
+-'fBodyAccJerkstdZ'
+-'fBodyBodyGyroMagstd'
+-'tGravityAccmeanZ'
+-'tBodyGyromeanZ'
+-'tBodyAccJerkMagmean'
+-'fBodyAccJerkmeanX'
+-'fBodyAccMagmean'
+-'tBodyAccstdZ'
+-'tBodyAccJerkstdZ'
+-'tBodyGyroJerkstdZ'
+-'fBodyAccstdX'
 -'fBodyGyrostdXz'
-
 -'fBodyBodyGyroJerkMagstdz'
