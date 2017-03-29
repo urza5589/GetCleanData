@@ -9,7 +9,7 @@ Actual data download is:
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 -------------------------------------------------
-# CourseProjectR:
+# run_analysis.R:
 
 This script performs all neccesary steps to transform the data set provided.
 
@@ -21,3 +21,4 @@ This script performs all neccesary steps to transform the data set provided.
 6) Join subjects and rename all columns to sensible nams
 7) Generates a tidy data text file 
 8) Pulls avgs from tidy data file
+9) Writes AVGs to csv file
