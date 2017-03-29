@@ -55,4 +55,4 @@ colnames(labeldData)<-c("activitynumber","activitylabel","subject",allCol)
 #Calculate final AVg  data
 myAverages = labeldData %>% group_by(activitylabel,subject) %>% summarize_all(funs(mean))
 
-write.csv(file="myAverages.csv",x=myAverages)
+write.table(file="myAverages.txt",x=myAverages,row.names =  FALSE)
