@@ -1,4 +1,4 @@
-#Getting and Cleaning data Coursera project
+# Getting and Cleaning data Coursera project
 
 Data for project iwth description avialbale at:
 
